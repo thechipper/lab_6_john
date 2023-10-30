@@ -4,6 +4,9 @@ while True:
 
     if menu_option == 1:
         stored_encode = input("Please enter your password to encode: ")
+        stored_decode = []
+        for i in stored_encode:
+            stored_decode.append(int(i) + 3)
         print("Your password has been encoded and stored!\n\n")
     elif menu_option == 2:
         pass
